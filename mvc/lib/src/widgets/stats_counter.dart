@@ -7,10 +7,6 @@ import 'package:flutter/material.dart';
 
 import 'package:todos_app_core/todos_app_core.dart';
 
-import 'package:scoped_model/scoped_model.dart';
-import 'package:mvc/src/models.dart';
-import 'package:mvc/src/todo_list_model.dart';
-
 import 'package:mvc/src/Controller.dart';
 
 class StatsCounter extends StatelessWidget {
@@ -53,7 +49,7 @@ class StatsCounter extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(bottom: 24.0),
             child: Text(
-              "$numActive",
+              '$numActive',
               key: ArchSampleKeys.statsNumActive,
               style: Theme.of(context).textTheme.subhead,
             ),
