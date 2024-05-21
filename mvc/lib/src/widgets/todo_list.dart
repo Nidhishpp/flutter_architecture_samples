@@ -4,10 +4,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:todos_app_core/todos_app_core.dart';
-import 'package:scoped_model/scoped_model.dart';
-import 'package:mvc/src/models.dart';
 import 'package:mvc/src/screens/detail_screen.dart';
-import 'package:mvc/src/todo_list_model.dart';
 import 'package:mvc/src/widgets/todo_item.dart';
 
 import 'package:mvc/src/Controller.dart';
@@ -77,7 +74,6 @@ class TodoList extends StatelessWidget {
       SnackBar(
         key: ArchSampleKeys.snackbar,
         duration: Duration(seconds: 2),
-        backgroundColor: Theme.of(context).backgroundColor,
         content: Text(
           ArchSampleLocalizations.of(context).todoDeleted(todo['task']),
           maxLines: 1,
